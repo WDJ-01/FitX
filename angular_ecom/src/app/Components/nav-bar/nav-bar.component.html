@@ -1,0 +1,108 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="logo-container">
+      <div class="logo"></div>
+      <h1>FitX</h1>
+
+    </div>
+    <div class="nav_div">
+      <ng-template #notLoggedIn>
+        <a routerLink="login" class="nav_div_link"> Login </a>
+        <a routerLink="signup" class="nav_div_link"> Sign up </a>
+      </ng-template>
+      <div *ngIf="isLoggedIn; else notLoggedIn">
+        <i class="bi bi-person-circle" id="icon"></i>
+        <a routerLink="user" id="user_icon">Welcome {{ username }} </a>
+      </div>
+      <button (click)="cart.toggle(); getTotalCost()">
+        <mat-icon>shopping_cart</mat-icon>
+        <span *ngIf="cartTotalItems > 0">{{cartTotalItems}}</span>
+
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav 
+  #sidenav 
+  hasBackdrop="true" 
+  mode="over"    
+  style="width: 225px"
+  >
+    <mat-nav-list>
+      <div class="nav-link-container">
+        <mat-icon>home</mat-icon>
+
+        <a class="nav-links" routerLink="">Home</a>
+      </div>
+
+      <div class="nav-link-container-categories">
+        <div class="nav-link-subcontainer-categories">
+          <mat-icon>toc</mat-icon>
+          <div class="nav-link-categories">
+            <button class="nav-links" id="nav-category" (click)="onClick()">
+              Categories
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-link-categories-content" *ngIf="isVisible">
+          <a routerLink="category/men">Mens</a>
+          <a routerLink="category/women">Womens</a>
+          <a routerLink="category/running">Running</a>
+          <a routerLink="category/weightlifting">Weightlifting</a>
+        </div>
+      </div>
+      <div class="nav-link-container">
+        <mat-icon>favorite</mat-icon>
+        <a class="nav-links" routerLink="favorites">Favorites</a>
+      </div>
+      <div class="nav-link-container">
+        <mat-icon>person</mat-icon>
+        <a class="nav-links" routerLink="user">My Profile</a>
+      </div>
+      <div class="nav-link-container">
+        <mat-icon>person_add</mat-icon>
+
+        <a class="nav-links" routerLink="signup">Sign up</a>
+      </div>
+      <div class="nav-link-container">
+        <mat-icon>login</mat-icon>
+        <a class="nav-links" routerLink="login">Login</a>
+      </div>
+   
+  
+      <div class="nav-link-container">
+        <mat-icon>logout</mat-icon>
+        <button class="log-out-btn" (click)="signout()">Log out</button>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav
+    #cart
+    position="end"
+    mode="over"
+    style="width: 330px"
+    hasBackdrop="true"
+    mode="over"
+  >
+    <app-cart [total]="totalCost"></app-cart>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div style="text-align: center">
+      <app-alert></app-alert>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

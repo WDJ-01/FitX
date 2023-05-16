@@ -1,0 +1,121 @@
+*{
+    color: #53565a;
+}
+.footer{
+    color: black;
+    height: 16rem;
+    width: 100%;
+    background-color: white;
+    border-top: .08rem solid #53565a;
+}
+.footer-part1{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    padding: .5rem 0 0 2rem;
+}
+.footer-part1 .account{
+    width: 50%;
+    height: 100%;
+    padding: .5rem;
+
+}
+.footer-part1 .categories{
+    width: 50%;
+    height: 100%;
+    padding: .5rem;
+
+}
+.account h4,
+.categories h4{
+font-size: 1.1rem;
+}
+.account p,
+.categories p {
+    margin: 0;
+    font-size: .8rem;
+}
+
+.footer-part2{
+    /* height: 4rem; */
+    width: 100%;
+    display: flex;
+    padding: 0 0 0 2rem;
+
+}
+.footer-part2 .payment{
+    height: 100%;
+    width: 50%
+}
+.payment img{
+    padding: .5rem;
+}
+.footer-part2 .social{
+    height: 100%;
+    width: 50%
+}
+.social i{
+padding: 1rem;
+}
+.footer-part3{
+    /* height: 4rem; */
+    width: 100%;
+    display: flex;
+    padding: 0 0 0 2rem;
+
+}
+.footer-part3 .company{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.footer-part3 .legal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.legal p{
+    padding: .5rem .5rem .5rem 0;
+    margin: 0;
+    font-size: .8rem;
+}
+.company p{
+    margin: 0;
+    padding-top: .5rem;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 560px) {
+ .footer-part3{
+    flex-direction: column;
+ }
+ .footer-part3 .company{
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+ 
+}
+.footer-part3 .legal{
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+/* .footer-part2{
+    flex-direction: column;
+ }*/
+ .footer-part2 .social{
+    justify-content: center;
+
+    width: 100%;
+    height: 50%;
+ 
+}
+.footer-part2 .payment{
+    justify-content: center;
+
+    width: 100%;
+    height: 50%;
+} 
+  }

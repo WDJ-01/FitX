@@ -1,0 +1,57 @@
+<div class="cart">
+  <h3>Cart</h3>
+
+  <div class="cart-item" *ngFor="let product of items">
+    <!-- <div class="cart-item-img">
+      <img [src]="product.product.products_cover" />
+    </div> -->
+    <div
+      class="part-1"
+      style="background-image:url({{ product.product.products_cover}}.png )"
+      (click)="navigate(product.product.products_id)"
+    >
+      <div class="img-overlay">
+        <span>View Product</span>
+      </div>
+    </div>
+
+    <div class="cart-item-details">
+      <!-- <div class="cart-item-content">
+        <span class="cart-item-name">{{ product.product.products_name }}</span>
+        <span class="cart-item-desc">{{ product.product.products_desc }}</span>
+        <span class="cart-item-price">{{
+          product.product.products_price | currency
+        }}</span>
+      </div> -->
+      <div class="part-2">
+        <h3 class="product-title">{{ product.product.products_name }}</h3>
+        <h3 class="product-title">{{ product.product.products_desc }}</h3>
+        <!-- <h4 class="product-old-price">$79.99</h4> -->
+        <h4 class="product-price">${{ product.product.products_price }}</h4>
+    
+      </div>
+
+      <div class="cart-item-btns">
+        <button (click)="removeFromCart(product.product)">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <div class="control-btns">
+          <button (click)="incCartitems(product.product)">
+            <mat-icon>add</mat-icon>
+          </button>
+          <span>{{ product.amount }}</span>
+          <button (click)="descCartitems(product.product)">
+            <mat-icon>remove</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="summary">
+    <h3>Summary</h3>
+    <p>Total: {{ total }}</p>
+  </div>
+
+  <button (click)="clearCart()" class="clear-btn">Clear Cart</button>
+  <button class="checkout-btn">Proceed to Checkout</button>
+</div>

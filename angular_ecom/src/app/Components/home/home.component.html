@@ -1,0 +1,169 @@
+<section class="home_section">
+
+  <div class="home_subsection" >
+    <div class="home_banner" id="mens">
+      <h1>Mens Apparel</h1>
+      <p>
+        Apparel built with high quality, lightweight, breathable material making
+        your workouts a breeze.
+      </p>
+      <button id="home_btn">
+        <a routerLink="category/men">Shop now</a>
+      </button>
+    </div>
+  
+    <div class="row flex-wrap  g-0">
+      <div class=" col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3" *ngFor="let product of mensList">
+        <div id="product-1" class="single-product">
+          <div
+            class="part-1"
+             style="background-image:url({{product.products_cover}}.png ); background-size: cover" 
+            (click)="navigate(product.products_id)"
+
+            >
+            <div class="img-overlay">
+              <span>View Product</span>
+            </div>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">{{ product.products_name }}</h3>
+            <h3 class="product-title">{{ product.products_desc }}</h3>
+            <h4 class="product-price">${{ product.products_price }}</h4>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="home_subsection" >
+    <div class="home_banner" id="women">
+      <h1>Womens Apparel</h1>
+      <p>
+        Enjoy seamless, lightweight apparel made for comfort and performance.
+      </p>
+      <button id="home_btn">
+        <a routerLink="category/women">Shop now</a>
+      </button>
+    </div>
+  
+    <div class="row flex-wrap  g-0">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3" *ngFor="let product of womensList">
+        <div id="product-1" class="single-product">
+          <div
+            class="part-1"
+            style="background-image:url({{product.products_cover }}.png); background-size: cover"
+            (click)="navigate(product.products_id)"
+
+            >
+            <div class="img-overlay">
+              <span>View Product</span>
+            </div>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">{{ product.products_name }}</h3>
+            <h3 class="product-title">{{ product.products_desc }}</h3>
+            <!-- <h4 class="product-old-price">$79.99</h4> -->
+            <h4 class="product-price">${{ product.products_price }}</h4>
+            <!-- <button class="add-btn" (click)="addToCart(product)">
+              <mat-icon>add_shopping_cart</mat-icon>Add to Cart
+            </button>
+
+            <button class="fav-btn" (click)="addToFavorites(product)">
+              <mat-icon>favorite</mat-icon>Add to Favorites
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="home_subsection" >
+    <div class="home_banner" id="running">
+      <h1>Running Gear</h1>
+      <p>
+        Running gear that feels like your gliding, effortless motion.
+      </p>
+      <button id="home_btn">
+        <a routerLink="category/running">Shop now</a>
+      </button>
+    </div>
+  
+    <div class="row flex-wrap  g-0">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3" *ngFor="let product of runningList">
+        <div id="product-1" class="single-product">
+          <div
+            class="part-1"
+            style="background-image:url( {{product.products_cover}}.png) ; background-size: cover"
+            (click)="navigate(product.products_id)"
+
+          >
+            <div class="img-overlay">
+              <span>View Product</span>
+            </div>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">{{ product.products_name }}</h3>
+            <h3 class="product-title">{{ product.products_desc }}</h3>
+            <!-- <h4 class="product-old-price">$79.99</h4> -->
+            <h4 class="product-price">${{ product.products_price }}</h4>
+            <!-- <button class="add-btn" (click)="addToCart(product)">
+              <mat-icon>add_shopping_cart</mat-icon>Add to Cart
+            </button>
+
+            <button class="fav-btn" (click)="addToFavorites(product)">
+              <mat-icon>favorite</mat-icon>Add to Favorites
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="home_subsection" >
+    <div class="home_banner" id="weightlifting">
+      <h1>Weightlifting Gear</h1>
+      <p>
+        Make every lift feel liftweight and enjoy gear built to endure.
+      </p>
+      <button id="home_btn">
+        <a routerLink="category/weightlifting">Shop now</a>
+      </button>
+    </div>
+  
+    <div class="row flex-wrap  g-0">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3" *ngFor="let product of weightliftingList">
+        <div id="product-1" class="single-product">
+          <div
+            class="part-1"
+            style="background-image:url( {{product.products_cover }}.png); background-size: cover"
+            (click)="navigate(product.products_id)"
+
+            >
+            <div class="img-overlay">
+              <span>View Product</span>
+            </div>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">{{ product.products_name }}</h3>
+            <h3 class="product-title">{{ product.products_desc }}</h3>
+            <!-- <h4 class="product-old-price">$79.99</h4> -->
+            <h4 class="product-price">${{ product.products_price }}</h4>
+            <!-- <button class="add-btn" (click)="addToCart(product)">
+              <mat-icon>add_shopping_cart</mat-icon>Add to Cart
+            </button>
+
+            <button class="fav-btn" (click)="addToFavorites(product)">
+              <mat-icon>favorite</mat-icon>Add to Favorites
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
