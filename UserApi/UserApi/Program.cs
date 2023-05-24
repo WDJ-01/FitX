@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Owin.Hosting;
 using Newtonsoft.Json.Linq;
 using System.Data.SqlTypes;
 using System.Text;
+using UserApi;
 using UserApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -48,12 +50,13 @@ builder.Services.AddAuthentication(n =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI( c =>
+    {
+        string swaggerJsonBasePath = string.IsNullOrWhiteSpace(c.RoutePrefix) ? "." : "..";
+        c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "Hotel Listing Api");
+    });
     app.UseCors("CorsPolicy");
-}
 
 app.UseHttpsRedirection();
 

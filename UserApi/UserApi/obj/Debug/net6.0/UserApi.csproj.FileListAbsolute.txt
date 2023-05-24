@@ -162,3 +162,12 @@ C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug
 C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\System.Web.Http.SelfHost.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\System.Web.Http.Owin.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\Microsoft.Owin.Hosting.dll
+C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\bin\Debug\net6.0\Owin.dll
