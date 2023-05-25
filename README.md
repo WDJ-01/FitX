@@ -31,6 +31,41 @@ Here is a list of resources used:
 * TypeScript
 * Bootstrap
 
+### How To Use(Angular)
+
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
+
+#### Steps
+
+1. Fork this repoistory and clone it to your local machine.
+```bash
+$ git clone https://github.com/<your-username>/FitX.git
+``` 
+2. Go into the repository
+```bash
+$ cd angular_ecom
+```
+
+3. Install dependencies
+```bash
+$ npm install
+```
+
+#### Serve
+
+* Start's development server
+```bash
+$ npm start
+```
+
+#### Build
+
+* Create build. Find build in dist/angular_ecom folder.
+```bash
+$ npm build
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### .Net(UseApi)
 
 #### Contains:
@@ -45,6 +80,22 @@ Here is a list of resources used:
 Here is a list of resources used:
 * .Net Core
 * C#
+* 
+### How To Use(Angular)
+
+#### Steps
+To setup this project, you need to clone the git repo
+
+```sh
+$ git clone https://github.com/kubeopsskills/FitX.git
+$ cd UserApi
+```
+
+followed by
+
+```sh
+$ dotnet restore
+```
 
 ## Microsoft Sql Server
 
@@ -62,46 +113,11 @@ Here is a list of resources used:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## How To Use
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
-
-### Steps
-
-1. Fork this repoistory and clone it to your local machine.
-```bash
-$ git clone https://github.com/<your-username>/My-Portfolio.git
-``` 
-2. Go into the repository
-```bash
-$ cd my-portfolio
-```
-
-3. Install dependencies
-```bash
-$ npm install
-```
-
-### Serve
-
-* Start's development server
-```bash
-$ npm run serve
-```
-
-### Build
-
-* Create build (uses Wepback). Find build in dist/ folder.
-```bash
-$ npm run build
-```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Acknowledgments
 
-* react-router
-* react-icons
-* react-hooks
-
+* Bootstrap
+* Unsplash Images
+* Ng Material UI
+* Font Awesome
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
