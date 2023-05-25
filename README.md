@@ -1,6 +1,6 @@
 # FitX
 
-## To view a live example, **[click here](https://t0d00.netlify.app/)**
+## To view a live example, **[click here][(https://angular-ecom.netlify.app/)]**
 
 ## Descriptions
 
@@ -12,14 +12,14 @@ FitX is a functional ecommerce store built in Angular(frontend), ASP.NET Core(ba
 
 #### Contains:
 
-* Home page - gallery style
-* Login, signup pages
-* Sidenav with navigation buttons
-* Different pages for products in different categories - men, women, running, weightlifting
-* Single product page
-* Cart
-* Favorites page
-* User profile
+* Home page - gallery style.
+* Login, signup pages.
+* Sidenav with navigation buttons.
+* Different pages for products in different categories - men, women, running, weightlifting.
+* Single product page.
+* Cart.
+* Favorites page.
+* User profile.
 
 #### Built With
 
@@ -33,7 +33,7 @@ Here is a list of resources used:
 
 ### How To Use(Angular)
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer and I used [Visual Studio](https://code.visualstudio.com/) Code as a code editor.
 
 #### Steps
 
@@ -71,9 +71,9 @@ $ npm build
 #### Contains:
 
 * Api's for respective functions such as signing in, creating user, getting products ect.
-* Creating JWT token
-* Authentication
-* Hashing and salting of passwords
+* Creating JWT token.
+* Authentication.
+* Hashing and salting of passwords.
 
 #### Built With
 
@@ -81,13 +81,13 @@ Here is a list of resources used:
 * .Net Core
 * C#
 * 
-### How To Use(Angular)
+### How To Use(UserApi)
 
 #### Steps
-To setup this project, you need to clone the git repo
+To setup this project, you need to clone the git repo.
 
 ```sh
-$ git clone https://github.com/kubeopsskills/FitX.git
+$ git clone https://github.com/FitX.git
 $ cd UserApi
 ```
 
