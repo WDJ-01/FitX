@@ -1,6 +1,6 @@
 # FitX
 
-## To view a live example, **[click here][(https://angular-ecom.netlify.app/)]**
+## To view a live example, **[click here](https://angular-ecom.netlify.app/)**
 
 ## Descriptions
 
@@ -33,7 +33,7 @@ Here is a list of resources used:
 
 ### How To Use(Angular)
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer and I used [Visual Studio](https://code.visualstudio.com/) Code as a code editor.
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer and I used [Visual Studio Code](https://code.visualstudio.com/) as a code editor.
 
 #### Steps
 
@@ -82,6 +82,8 @@ Here is a list of resources used:
 * C#
 * 
 ### How To Use(UserApi)
+
+I used [Visual Studio](https://visualstudio.microsoft.com/downloads/) for code editor.
 
 #### Steps
 To setup this project, you need to clone the git repo.
