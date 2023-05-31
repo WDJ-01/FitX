@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
   <IisApp path="C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\obj\Release\net6.0\PubTmp\EFSQLScripts\UserApi.Data.ProductsDbContext.sql" />
+  <dbfullsql path="C:\Users\Wian\Desktop\PROJECTS\AngularApps\AngularEcom\UserApi\UserApi\obj\Release\net6.0\PubTmp\EFSQLScripts\UserApi.Data.UserDbContext.sql" />
 </sitemanifest>

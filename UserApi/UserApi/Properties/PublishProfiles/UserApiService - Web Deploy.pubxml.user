@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmPIduVrR2EqNphiQtTighQAAAAACAAAAAAAQZgAAAAEAACAAAAA57uLRNYx6JCCChCk3aqZvMBOfqz9ill3cGC0oj/DFcAAAAAAOgAAAAAIAACAAAADj/u+04A8W/j6ivLc89X1JmcMawxDEgSr6OIoY+pXL1IAAAAAch1CkpZnqr5ifwK3dO6r6fFDGONnnAXQMSt/51gxvEOTbyvE4qNe39jCPSAJ5NkHR8KyvgAAMyWf+3v01wQaDAat2K+XzZwq+l8TcWsItKhSovKrGd7KOfwrSwqNRSE7hQ9Z0UbL8Ox1JaCQi/GopmZOU2Cac6UeNzVuAn2BGRUAAAAAVEdycVtOWqS478klwoVZKqJUryDHJ8Xssayq5hnWo3VCEgZPRMHJl3oykNOlW7YLWtYjtmupOepsYShzxBcp0</EncryptedPassword>
+    <History>True|2023-05-31T07:11:24.0634601Z;True|2023-05-30T12:17:54.8889705+02:00;True|2023-05-30T12:13:29.5383445+02:00;True|2023-05-29T12:21:34.6624118+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="UserApi.Data.ProductsDbContext">
+      <Value>Data Source=tcp:userapidbserver.database.windows.net,1433%3bInitial Catalog=UserApi_db%3bUser Id=Wian%40userapidbserver%3bPassword=angular_ecom01</Value>
+    </EFMigrations>
+    <EFMigrations Include="UserApi.Data.UserDbContext">
+      <Value>Data Source=tcp:userapidbserver.database.windows.net,1433%3bInitial Catalog=UserApi_db%3bUser Id=Wian%40userapidbserver%3bPassword=angular_ecom01</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

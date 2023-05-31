@@ -11,9 +11,11 @@ export class ApiService {
   displayIsLoggedIn = new BehaviorSubject<any>(false);
 
   //from ASP.NET Core Web API (User Methods)
-  readonly UserAPI = 'https://localhost:7196/api/Login/';
+  // readonly UserAPI = 'https://localhost:7196/api/Login/';
+  readonly UserAPI = 'https://userapiservice.azurewebsites.net/api/Login/';
 
-  readonly ProductsAPI = 'https://localhost:7196/api/Products/';
+  // readonly ProductsAPI = 'https://localhost:7196/api/Products/';
+  readonly ProductsAPI = 'https://userapiservice.azurewebsites.net/api/Products/';
 
   constructor(private http: HttpClient) {
 

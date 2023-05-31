@@ -117,6 +117,7 @@ namespace UserApi.Controllers
                  token = Request.Headers.TryGetValue("authorization", out var headerValue);
             }
             return null;*/
+            Console.WriteLine(authorization);
             var auth = authorization.Remove(0, 7);
 
             var user = _context.Users.FirstOrDefaultAsync(a => a.User_token == auth);
