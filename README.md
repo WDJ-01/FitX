@@ -4,7 +4,7 @@
 
 ## Descriptions
 
-FitX is a functional ecommerce store built in Angular(frontend), ASP.NET Core(backend) and Microsoft Sql Server(database). The below document contains information on how to replicate this project or use parts of it as desired.
+FitX is a functional ecommerce store built in Angular(frontend), ASP.NET Core(backend) and Microsoft Sql Server(database). The below document contains information on how to replicate this project or use parts of it as desired. The angular front end is hosted on Netlify and ASP.NET Core API along with the sql database is hosted in [Microsoft Azure](https://azure.microsoft.com/en-gb/free/search/?ef_id=_k_Cj0KCQjw4NujBhC5ARIsAF4Iv6eMRmAZ8I1rhkA_Wtyt9lwQsjzbgor1dnzHkjQQvONn7VC8ac_aL4kaAufMEALw_wcB_k_&OCID=AIDcmmck5pq7og_SEM__k_Cj0KCQjw4NujBhC5ARIsAF4Iv6eMRmAZ8I1rhkA_Wtyt9lwQsjzbgor1dnzHkjQQvONn7VC8ac_aL4kaAufMEALw_wcB_k_&gclid=Cj0KCQjw4NujBhC5ARIsAF4Iv6eMRmAZ8I1rhkA_Wtyt9lwQsjzbgor1dnzHkjQQvONn7VC8ac_aL4kaAufMEALw_wcB).
 
 ## Contents
 
@@ -64,6 +64,12 @@ $ npm start
 ```bash
 $ npm build
 ```
+
+### How Host Angular Project
+
+I used Netlify to host my [Angular](https://www.netlify.com/) frontend. Netlify is a good free alternative to hosting and is easy to use.
+This article explains deploying a angular app from github to netlify - [here](https://www.makeuseof.com/angular-website-host-netlify-github/).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### .Net(UseApi)
@@ -112,6 +118,17 @@ $ dotnet restore
 #### Built With
 
 * Microsoft Sql Server
+
+### How To Host API and SQL
+
+Hosting the api consist of two steps 
+* Including sql database tables and column names and info, this happens in the migration folders.
+* Publishing Api code to azure as a service.
+
+NOTE - remember to add new Azure https in Angular project
+
+* Video on hosting Api code to Azure - [here](https://www.youtube.com/watch?v=MP4zatl3jF8).
+* Article for adding migration folder in project - [here](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
